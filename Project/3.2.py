@@ -1,6 +1,5 @@
 import math
 
-
 def GCdistance(x1,y1,x2,y2):
     d=6371.01*math.acos(math.sin(x1)*math.sin(x2)+math.cos(x1)*math.cos(x2)*math.cos(y1-y2))
     return d

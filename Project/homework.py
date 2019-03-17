@@ -1,7 +1,10 @@
-present=312032486
-birth=60*60*24*365*5//7
-death=60*60*24*365*5//13
-migration=60*60*24*365*5//45
+Set=eval(input("1과 100사이의 정수를 입력하세요: "))
+List=list(Set)
+List.sort()
 
-for i in [1,2,3,4,5]:
-    print(i*5,"년후 인구: ",present+((birth-death+migration)*i))
+while(List):
+    print(List[0]," - ",List.count(List[0]),"번 나타납니다.")
+    cnt=List.count(List[0])
+    while(cnt):
+        List.pop(0)
+        cnt-=1
