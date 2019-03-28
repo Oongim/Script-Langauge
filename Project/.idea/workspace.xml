@@ -2,44 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9646db89-792f-4107-9f24-1581feaffbaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/15-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-15.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-19.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-4.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-5.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11-27.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11.1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../14-2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-14.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-6.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-7.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-8.PNG" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/tkinter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-11.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-9.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.14.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding camp.py" beforeDir="false" afterPath="$PROJECT_DIR$/coding camp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ref_10-2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ref_10-3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ref_10-4.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ref_10-5.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter1.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter2.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/H4.py" beforeDir="false" afterPath="$PROJECT_DIR$/H4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,27 +53,28 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2144" />
+          <entry key="py" value="2784" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2144" />
+          <entry key="Python" value="2784" />
         </counts>
       </usages-collector>
     </session>
@@ -153,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="380">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -162,12 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coding camp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="134" column="17" lean-forward="true" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
-              <folding>
-                <marker date="1553666357644" expanded="true" signature="1625:1626" ph="..." />
-                <marker date="1553666357644" expanded="true" signature="3149:3492" ph="..." />
-              </folding>
+            <state relative-caret-position="2660">
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
             </state>
           </provider>
         </entry>
@@ -176,10 +138,7 @@
         <entry file="file://$PROJECT_DIR$/15-3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-              <folding>
-                <marker date="1553736239680" expanded="true" signature="13:18" ph="..." />
-              </folding>
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -187,26 +146,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/H4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
-                <marker date="1553735175931" expanded="true" signature="371:668" ph="..." />
+                <marker date="1553779685704" expanded="true" signature="3097:3345" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/H4.py">
+        <entry file="file://$PROJECT_DIR$/tkinter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
-              <folding>
-                <marker date="1553739511031" expanded="true" signature="26:33" ph="..." />
-                <marker date="1553739511031" expanded="true" signature="520:527" ph="..." />
-                <marker date="1553739511031" expanded="true" signature="1664:1671" ph="..." />
-                <marker date="1553739511031" expanded="true" signature="2655:2802" ph="..." />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -224,10 +186,7 @@
         <entry file="file://$PROJECT_DIR$/15-4.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <marker date="1553052462744" expanded="true" signature="9:14" ph="..." />
-              </folding>
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -235,13 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/H3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="2375">
               <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
-              <folding>
-                <marker date="1553738333215" expanded="true" signature="1041:1271" ph="..." />
-                <marker date="1553738333215" expanded="true" signature="1676:1823" ph="..." />
-                <marker date="1553738333215" expanded="true" signature="2364:3088" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -292,12 +246,13 @@
         <option value="$PROJECT_DIR$/15-3.py" />
         <option value="$PROJECT_DIR$/H3.py" />
         <option value="$PROJECT_DIR$/H4.py" />
+        <option value="$PROJECT_DIR$/tkinter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="762" />
-    <option name="y" value="26" />
+    <option name="x" value="877" />
+    <option name="y" value="12" />
     <option name="width" value="1143" />
     <option name="height" value="940" />
   </component>
@@ -337,7 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.H4">
+  <component name="RunManager" selected="Python.tkinter">
     <configuration name="15-3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -422,7 +377,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tkinter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -434,7 +389,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -446,18 +401,18 @@
     <list>
       <item itemvalue="Python.2-5" />
       <item itemvalue="Python.H3" />
-      <item itemvalue="Python.practice" />
       <item itemvalue="Python.15-3" />
       <item itemvalue="Python.15-4" />
       <item itemvalue="Python.H4" />
+      <item itemvalue="Python.tkinter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tkinter" />
         <item itemvalue="Python.H4" />
         <item itemvalue="Python.H3" />
         <item itemvalue="Python.15-4" />
         <item itemvalue="Python.15-3" />
-        <item itemvalue="Python.practice" />
       </list>
     </recent_temporary>
   </component>
@@ -475,15 +430,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="610" y="21" width="914" height="752" extended-state="0" />
+    <frame x="877" y="12" width="1143" height="940" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2177879" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21719457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.60841423" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6074534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955357" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -528,10 +483,45 @@
     <entry file="file://$PROJECT_DIR$/2-6.py" />
     <entry file="file://$PROJECT_DIR$/2-9.py" />
     <entry file="file://$PROJECT_DIR$/2-11.py" />
+    <entry file="file://$PROJECT_DIR$/homework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coding camp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2660">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15-3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42161">
           <caret line="2222" selection-start-line="2222" selection-end-line="2222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15-4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -542,76 +532,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coding camp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="134" column="17" lean-forward="true" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
-          <folding>
-            <marker date="1553666357644" expanded="true" signature="1625:1626" ph="..." />
-            <marker date="1553666357644" expanded="true" signature="3149:3492" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-          <folding>
-            <marker date="1553735175931" expanded="true" signature="371:668" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15-3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <marker date="1553736239680" expanded="true" signature="13:18" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15-4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <marker date="1553052462744" expanded="true" signature="9:14" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
-          <folding>
-            <marker date="1553738333215" expanded="true" signature="1041:1271" ph="..." />
-            <marker date="1553738333215" expanded="true" signature="1676:1823" ph="..." />
-            <marker date="1553738333215" expanded="true" signature="2364:3088" ph="..." />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/H4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="19">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
-            <marker date="1553739511031" expanded="true" signature="26:33" ph="..." />
-            <marker date="1553739511031" expanded="true" signature="520:527" ph="..." />
-            <marker date="1553739511031" expanded="true" signature="1664:1671" ph="..." />
-            <marker date="1553739511031" expanded="true" signature="2655:2802" ph="..." />
+            <marker date="1553779685704" expanded="true" signature="3097:3345" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
