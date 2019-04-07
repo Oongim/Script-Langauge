@@ -304,9 +304,6 @@ from tkinter import *
 from PIL import Image, ImageTk
 import random
 class CardGame:
-    def animate(self):
-        pass
-
     def reset(self):
         self.card = random.sample([x for x in range(1, 52)], 4)
         self.img = [ImageTk.PhotoImage(Image.open("card.png").crop((self.cwidth * ((self.card[i]) % 13),
@@ -323,8 +320,141 @@ class CardGame:
         self.L4.configure(image=self.img[3])
         self.L4.image = self.img[3]
 
+    def wrong(self,case):
+        window=Tk()
+        window.title("틀림")
+        window.geometry("300x100+100+100")
+        window.resizable(False, False)
+        if case==1:
+            Label(window, text="보여지는 카드를 사용해야 합니다.").place(x=60,y=40)
+        else:
+            Label(window, text=case+" 은/는 24가 아닙니다.").place(x=60, y=40)
+    def right(self):
+        window = Tk()
+        window.title("정확")
+        window.geometry("300x100+100+100")
+        window.resizable(False, False)
+        Label(window, text="맞았습니다.").place(x=60, y=40)
+################## ########################################################################################
+    def sum(self,newEqu,j,bracket):
+        if bracket==1:
+            newEqu.pop(j)
+            while newEqu[j+1] != ")":
+                if newEqu.count("(") != 0:
+                    self.sum(newEqu,i,1)
+                if newEqu.count("*") != 0 or newEqu.count("/") != 0:
+                    for i in range(j,len(newEqu)):
+                        if newEqu[i]=="*":
+                            newEqu[i-1]=newEqu[i-1]*newEqu[i+1]
+                            newEqu.pop(i + 1)
+                            newEqu.pop(i)
+                            break
+                        elif newEqu[i]=="/":
+                            newEqu[i-1]=newEqu[i-1]/newEqu[i+1]
+                            newEqu.pop(i+1)
+                            newEqu.pop(i)
+                            break
+                        elif newEqu[i] == ")":
+                            for i in range(j, len(newEqu)):
+                                if newEqu[i] == "+":
+                                    newEqu[i - 1] = newEqu[i - 1] + newEqu[i + 1]
+                                    newEqu.pop(i + 1)
+                                    newEqu.pop(i)
+                                    break
+                                elif newEqu[i] == "-":
+                                    newEqu[i - 1] = newEqu[i - 1] - newEqu[i + 1]
+                                    newEqu.pop(i + 1)
+                                    newEqu.pop(i)
+                                    break
+                            break
+                else:
+                    for i in range(j,len(newEqu)):
+                        if newEqu[i]=="+":
+                            newEqu[i-1]=newEqu[i-1]+newEqu[i+1]
+                            newEqu.pop(i + 1)
+                            newEqu.pop(i)
+                            break
+                        elif newEqu[i]=="-":
+                            newEqu[i-1]=newEqu[i-1]-newEqu[i+1]
+                            newEqu.pop(i+1)
+                            newEqu.pop(i)
+                            break
+            newEqu.pop(j+1)
+        else:
+            while len(newEqu)!=1:
+                if newEqu.count("(")!=0:
+                    for i in range(len(newEqu)):
+                        if newEqu[i]=="(":
+                            self.sum(newEqu,i,1)
+                            break
+                if newEqu.count("*")!=0 or newEqu.count("/")!=0:
+                    for i in range(len(newEqu)):
+                        if newEqu[i]=="*":
+                            newEqu[i-1]=newEqu[i-1]*newEqu[i+1]
+                            newEqu.pop(i + 1)
+                            newEqu.pop(i)
+                            break
+                        elif newEqu[i]=="/":
+                            newEqu[i-1]=newEqu[i-1]/newEqu[i+1]
+                            newEqu.pop(i+1)
+                            newEqu.pop(i)
+                            break
+                else:
+                    for i in range(len(newEqu)):
+                        if newEqu[i]=="+":
+                            newEqu[i-1]=newEqu[i-1]+newEqu[i+1]
+                            newEqu.pop(i + 1)
+                            newEqu.pop(i)
+                            break
+                        elif newEqu[i]=="-":
+                            newEqu[i-1]=newEqu[i-1]-newEqu[i+1]
+                            newEqu.pop(i+1)
+                            newEqu.pop(i)
+                            break
+###############################################################################################
     def enter(self):
-        self.e1.get()
+        equList=[str(x) for x in self.e1.get()]
+        newEqu=[]
+        numList=[]
+        i=0
+        while i < len(equList):
+            if str(0)<=equList[i] <=str(9):
+                if  i+1!=len(equList) and str(0)<=equList[i+1] <=str(9):
+                    if i+2!=len(equList) and str(0) <= equList[i + 2] <= str(9) or (10*int(equList[i])+int(equList[i+1]))>13:
+                        return self.wrong(1)
+                    newEqu.append(10*int(equList[i])+int(equList[i+1]))
+                    numList.append(10*int(equList[i])+int(equList[i+1]))
+                    i+=1
+                else:
+                    newEqu.append(int(equList[i]))
+                    numList.append(int(equList[i]))
+            elif equList[i]=="+" or equList[i]=="-" or equList[i]=="*" or equList[i]=="/" :
+                if i + 1 != len(equList) and (equList[i+1]=="+" or equList[i+1]=="-" or equList[i+1]=="*" or equList[i+1]=="/"):
+                    return self.wrong(self.e1.get())
+                newEqu.append(equList[i])
+            else:
+                newEqu.append(equList[i])
+            i+=1
+        if len(numList)>4:
+            return self.wrong(1)
+        for i in range(4):
+            for j in range(4):
+                if numList[j]==1:
+                    if self.card[i] % 13 == 12:
+                        print(numList[j])
+                        numList.pop(j)
+                        break
+                if self.card[i]%13==numList[j]-2:
+                    print(numList[j])
+                    numList.pop(j)
+                    break
+        if  len(numList)!=0:
+            return self.wrong(1)
+        self.sum(newEqu,0,0)
+        if newEqu[0]!=24:
+            return self.wrong(self.e1.get())
+        else:
+            return self.right()
     def __init__(self):
         window=Tk()
         window.title("24점 게임")
@@ -355,6 +485,5 @@ class CardGame:
         self.e1.pack(side=LEFT)
         Button(frame2,text="확인",command=self.enter).pack(side=LEFT)
 
-        self.animate()
         window.mainloop()
 CardGame()
