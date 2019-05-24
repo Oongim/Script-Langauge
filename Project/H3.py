@@ -59,12 +59,12 @@ print("매출액: {0:.2f}".format((25000000-(5000000*0.08+5000000*0.1))/0.12+100
 # print("홀수 영역에 꽃힐 가능성 :",(rate.count(1)+rate.count(3))/len(rate)*100,"%")
 
 # #6.3
-# def reverse(number):
-#     number=str(number)
-#     r_num=''
-#     for i in range(len(number)-1,0-1,-1):
-#         r_num+=number[i]
-#     return int(r_num)
+def reverse(number):
+    number=str(number)
+    r_num=''
+    for i in range(len(number)-1,0-1,-1):
+        r_num+=number[i]
+    return int(r_num)
 #
 # def isPalindrome(number):
 #     r_num=reverse(number)

@@ -50,100 +50,101 @@
 #
 # window.mainloop()
 ##############################################################
+
 # #9-2
+# # from tkinter import *
+# # window=Tk()
+# # def calculate():
+# #     money=eval(e1.get())
+# #     year=eval(e2.get())
+# #     interest=eval(e3.get())
+# #     futureValue=money*((1+interest/100)**(year*12))
+# #     print( futureValue)
+# #     l5.configure(text="{0:.2f}".format(futureValue))
+# #
+# # Label(window,text="투자금").grid(row=0,column=0,sticky='W')
+# # Label(window,text="기간").grid(row=1,column=0,sticky='W')
+# # Label(window,text="월이율").grid(row=2,column=0,sticky='W')
+# # Label(window,text="미래 가치").grid(row=3,column=0,sticky='W')
+# # l5=Label(window,text="")
+# # l5.grid(row=3,column=1,sticky='E')
+# #
+# # e1=Entry(window,justify=RIGHT)
+# # e1.grid(row=0,column=1)
+# # e2=Entry(window,justify=RIGHT)
+# # e2.grid(row=1,column=1)
+# # e3=Entry(window,justify=RIGHT)
+# # e3.grid(row=2,column=1)
+# #
+# # b1=Button(window,text="계산하기",command=calculate).grid(row=4,column=1,sticky="E")
+# # window.mainloop()
+
+
+# #9-3
 # from tkinter import *
-# window=Tk()
-# def calculate():
-#     money=eval(e1.get())
-#     year=eval(e2.get())
-#     interest=eval(e3.get())
-#     futureValue=money*((1+interest/100)**(year*12))
-#     print( futureValue)
-#     l5.configure(text="{0:.2f}".format(futureValue))
 #
-# Label(window,text="투자금").grid(row=0,column=0,sticky='W')
-# Label(window,text="기간").grid(row=1,column=0,sticky='W')
-# Label(window,text="월이율").grid(row=2,column=0,sticky='W')
-# Label(window,text="미래 가치").grid(row=3,column=0,sticky='W')
-# l5=Label(window,text="")
-# l5.grid(row=3,column=1,sticky='E')
+# class Radio:
+#     def display(self):
+#         self.canvas.delete("grim")
+#         if self.v.get()==1: #직사각형
+#             if self.f.get()==1: #채우기
+#                 self.canvas.create_rectangle(10, 10, 290, 190, tag="grim",fill='red')
+#             else:
+#                 self.canvas.create_rectangle(10, 10, 290, 190, tag="grim")
+#         else:
+#             if self.f.get() == 1:  # 채우기
+#                 self.canvas.create_oval(10, 10, 290, 190, tag="grim",fill='red')
+#             else:
+#                 self.canvas.create_oval(10, 10, 290, 190, tag="grim")
+#     def __init__(self):
+#         window=Tk()
+#         window.title("라디오 버튼")
+#         self.canvas=Canvas(window,bg="white",width=300,height=200)
+#         self.canvas.create_rectangle(10,10,290,190,tag="grim")
+#         self.canvas.pack()
+#         frame=Frame(window)
+#         frame.pack()
+#         self.v=IntVar()# 정수 클래스의 객체로 만든다  self.v.get()
+#         Radiobutton(frame,text="직사각형",variable=self.v,value=1,command=self.display).pack(side=LEFT)
+#         Radiobutton(frame,text="타원",variable=self.v,value=2,command=self.display).pack(side=LEFT)
+#         self.f=IntVar()
+#         Checkbutton(frame,text="채우기",variable=self.f,command=self.display).pack(side=LEFT)
 #
-# e1=Entry(window,justify=RIGHT)
-# e1.grid(row=0,column=1)
-# e2=Entry(window,justify=RIGHT)
-# e2.grid(row=1,column=1)
-# e3=Entry(window,justify=RIGHT)
-# e3.grid(row=2,column=1)
+#         window.mainloop()
 #
-# b1=Button(window,text="계산하기",command=calculate).grid(row=4,column=1,sticky="E")
-# window.mainloop()
+# Radio()
 
-'''
-#9-3
-from tkinter import *
 
-class Radio:
-    def display(self):
-        self.canvas.delete("grim")
-        if self.v.get()==1: #직사각형
-            if self.f.get()==1: #채우기
-                self.canvas.create_rectangle(10, 10, 290, 190, tag="grim",fill='red')
-            else:
-                self.canvas.create_rectangle(10, 10, 290, 190, tag="grim")
-        else:
-            if self.f.get() == 1:  # 채우기
-                self.canvas.create_oval(10, 10, 290, 190, tag="grim",fill='red')
-            else:
-                self.canvas.create_oval(10, 10, 290, 190, tag="grim")
-    def __init__(self):
-        window=Tk()
-        window.title("라디오 버튼")
-        self.canvas=Canvas(window,bg="white",width=300,height=200)
-        self.canvas.create_rectangle(10,10,290,190,tag="grim")
-        self.canvas.pack()
-        frame=Frame(window)
-        frame.pack()
-        self.v=IntVar()# 정수 클래스의 객체로 만든다  self.v.get()
-        Radiobutton(frame,text="직사각형",variable=self.v,value=1,command=self.display).pack(side=LEFT)
-        Radiobutton(frame,text="타원",variable=self.v,value=2,command=self.display).pack(side=LEFT)
-        self.f=IntVar()
-        Checkbutton(frame,text="채우기",variable=self.f,command=self.display).pack(side=LEFT)
+# #10.33
+# from tkinter import *
+# import random
+# class Histogram:
+#     def display(self):
+#         self.canvas.delete("grim")
+#         histogram=[0]*26
+#         for i in range(1000):
+#             histogram[random.randint(0,25)]+=1
+#         #빈도수 최대값을 구한다.
+#         maxCount=int(max(histogram))
+#         self.canvas.create_line(10,self.height-10,self.width-10,self.height-10,tags="grim")
+#         barW=(self.width-20)/26
+#         for i in range(26):
+#             self.canvas.create_rectangle(i*barW+10,self.height-(self.height-20)*histogram[i]/maxCount,
+#                                         (i+1)*barW+10,self.height-10,tags="grim")
+#             self.canvas.create_text(i*barW+10+10,self.height-10+5,text=chr(i+ord('a')),tags="grim")
+#             self.canvas.create_text(i * barW + 10 + 10,self.height-(self.height-20)*histogram[i]/maxCount-5, text=histogram[i], tags="grim")
+#     def __init__(self):
+#         window = Tk()
+#         window.title("빈도수")
+#         self.width=500
+#         self.height=300
+#         self.canvas=Canvas(window,width=self.width,height=self.height,bg="white")
+#         self.canvas.pack()
+#         Button(window,text="히스토그램 그리기",command=self.display).pack()
+#         window.mainloop()
+# Histogram()
 
-        window.mainloop()
 
-Radio()
-'''
-'''
-#10.33
-from tkinter import *
-import random
-class Histogram:
-    def display(self):
-        self.canvas.delete("grim")
-        histogram=[0]*26
-        for i in range(1000):
-            histogram[random.randint(0,25)]+=1
-        #빈도수 최대값을 구한다.
-        maxCount=int(max(histogram))
-        self.canvas.create_line(10,self.height-10,self.width-10,self.height-10,tags="grim")
-        barW=(self.width-20)/26
-        for i in range(26):
-            self.canvas.create_rectangle(i*barW+10,self.height-(self.height-20)*histogram[i]/maxCount,
-                                        (i+1)*barW+10,self.height-10,tags="grim")
-            self.canvas.create_text(i*barW+10+10,self.height-10+5,text=chr(i+ord('a')),tags="grim")
-            self.canvas.create_text(i * barW + 10 + 10,self.height-(self.height-20)*histogram[i]/maxCount-5, text=histogram[i], tags="grim")
-    def __init__(self):
-        window = Tk()
-        window.title("빈도수")
-        self.width=500
-        self.height=300
-        self.canvas=Canvas(window,width=self.width,height=self.height,bg="white")
-        self.canvas.pack()
-        Button(window,text="히스토그램 그리기",command=self.display).pack()
-        window.mainloop()
-Histogram()
-'''
-'''
 #10-35
 from tkinter import *
 
@@ -203,16 +204,12 @@ class BallAnimate:
         window.mainloop()
 
 BallAnimate()
-'''
+
 '''
 from tkinter import *
 import random
+import tkinter.messagebox
 class LinearSearch:
-    def endTextBox(self):
-        window = Tk()
-        window.title("끝났습니다.")
-        Label(window, text="찾았습니다").pack()
-        self.selected=-1
     def animate(self):
         self.canvas.delete("grim")
         for i in range(20):
@@ -220,16 +217,18 @@ class LinearSearch:
                 self.canvas.create_rectangle(i * (self.width - 10) / 20 + 5,
                                              (20 - self.sampleNumList[i]) * (self.height - 10) / 20 + 10,
                                              (i + 1) * (self.width - 10) / 20 + 5, self.height,fill='black',tag="grim")
-                if eval(self.e1.get())==self.sampleNumList[i]:
-                    self.endTextBox()
+
             else:
                 self.canvas.create_rectangle(i*(self.width-10)/20+5,(20-self.sampleNumList[i])*(self.height-10)/20+10,
                                          (i+1)*(self.width-10)/20+5,self.height,tag="grim")
-            self.canvas.create_text(i*(self.width-10)/20+(self.width-10)/20/2+5,(20-self.sampleNumList[i])*(self.height-10)/20-(self.height-10)/20/2+10
-                                    ,text=(self.sampleNumList[i]), tags="grim")
+            self.canvas.create_text(i*(self.width-10)/20+(self.width-10)/20/2+5,(20-self.sampleNumList[i])*(self.height-10)/20-(self.height-10)/20/2+10,text=(self.sampleNumList[i]), tags="grim")
+
     def next(self):
         self.selected+=1
         self.animate()
+        if eval(self.e1.get()) == self.sampleNumList[self.selected]:
+            tkinter.messagebox.showinfo("찾았음", "맞았음")
+            self.selected = -1
     def reset(self):
         self.sampleNumList = random.sample([x for x in range(1, 21)], 20)
         self.animate()
@@ -254,52 +253,76 @@ class LinearSearch:
 
 LinearSearch()
 '''
-'''
-from tkinter import *
-import random
-class SelectSort:
-    def animate(self):
-        self.canvas.delete("grim")
-        for i in range(20):
-            if(self.selected==i):
-                self.canvas.create_rectangle(i * (self.width - 10) / 20 + 5,
-                                             (20 - self.sampleNumList[i]) * (self.height - 10) / 20 + 10,
-                                             (i + 1) * (self.width - 10) / 20 + 5, self.height,fill='black',tag="grim")
-            else:
-                self.canvas.create_rectangle(i*(self.width-10)/20+5,(20-self.sampleNumList[i])*(self.height-10)/20+10,
-                                         (i+1)*(self.width-10)/20+5,self.height,tag="grim")
-            self.canvas.create_text(i*(self.width-10)/20+(self.width-10)/20/2+5,(20-self.sampleNumList[i])*(self.height-10)/20-(self.height-10)/20/2+10
-                                    ,text=(self.sampleNumList[i]), tags="grim")
-    def next(self):
-        self.selected=(self.selected+1)%20
-        temp=self.sampleNumList[self.selected]
-        for i in range(self.selected,20):
-            if(self.selected+1==self.sampleNumList[i]):
-                self.sampleNumList[self.selected]=self.selected+1
-                self.sampleNumList[i]=temp
-        self.animate()
-    def reset(self):
-        self.selected=-1
-        self.sampleNumList = random.sample([x for x in range(1, 21)], 20)
-        self.animate()
-    def __init__(self):
-        window=Tk()
-        window.title("선택 정렬 애니메이션")
-        self.width=600
-        self.height=200
-        self.canvas=Canvas(window,bg="white",width=self.width,height=self.height)
-        self.canvas.pack()
-        self.sampleNumList=random.sample([x for x in range(1,21)],20)
-        self.selected=-1
-        frame=Frame(window)
-        frame.pack()
-        Button(frame,text="다음단계",command=self.next).pack(side=LEFT)
-        Button(frame,text="재설정",command=self.reset).pack(side=LEFT)
-        self.animate()
-        window.mainloop()
-SelectSort()
-'''
 
+
+
+
+
+
+
+
+
+# from tkinter import *
+# import random
+# class SelectSort:
+#     def animate(self):
+#         self.canvas.delete("grim")
+#         for i in range(20):
+#             if(self.selected==i):
+#                 self.canvas.create_rectangle(i * (self.width - 10) / 20 + 5,
+#                                              (20 - self.sampleNumList[i]) * (self.height - 10) / 20 + 10,
+#                                              (i + 1) * (self.width - 10) / 20 + 5, self.height,fill='black',tag="grim")
+#             else:
+#                 self.canvas.create_rectangle(i*(self.width-10)/20+5,(20-self.sampleNumList[i])*(self.height-10)/20+10,
+#                                          (i+1)*(self.width-10)/20+5,self.height,tag="grim")
+#             self.canvas.create_text(i*(self.width-10)/20+(self.width-10)/20/2+5,(20-self.sampleNumList[i])*(self.height-10)/20-(self.height-10)/20/2+10
+#                                     ,text=(self.sampleNumList[i]), tags="grim")
+#     def next(self):
+#         self.selected=(self.selected+1)%20
+#         temp=self.sampleNumList[self.selected]
+#         for i in range(self.selected,20):
+#             if(self.selected+1==self.sampleNumList[i]):
+#                 self.sampleNumList[self.selected]=self.selected+1
+#                 self.sampleNumList[i]=temp
+#         self.animate()
+#     def reset(self):
+#         self.selected=-1
+#         self.sampleNumList = random.sample([x for x in range(1, 21)], 20)
+#         self.animate()
+#     def __init__(self):
+#         window=Tk()
+#         window.title("선택 정렬 애니메이션")
+#         self.width=600
+#         self.height=200
+#         self.canvas=Canvas(window,bg="white",width=self.width,height=self.height)
+#         self.canvas.pack()
+#         self.sampleNumList=random.sample([x for x in range(1,21)],20)
+#         self.selected=-1
+#         frame=Frame(window)
+#         frame.pack()
+#         Button(frame,text="다음단계",command=self.next).pack(side=LEFT)
+#         Button(frame,text="재설정",command=self.reset).pack(side=LEFT)
+#         self.animate()
+#         window.mainloop()
+# SelectSort()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 from tkinter import *
 from PIL import Image, ImageTk
 import random
@@ -335,83 +358,7 @@ class CardGame:
         window.geometry("300x100+100+100")
         window.resizable(False, False)
         Label(window, text="맞았습니다.").place(x=60, y=40)
-################## ########################################################################################
-    def sum(self,newEqu,j,bracket):
-        if bracket==1:
-            newEqu.pop(j)
-            while newEqu[j+1] != ")":
-                if newEqu.count("(") != 0:
-                    self.sum(newEqu,i,1)
-                if newEqu.count("*") != 0 or newEqu.count("/") != 0:
-                    for i in range(j,len(newEqu)):
-                        if newEqu[i]=="*":
-                            newEqu[i-1]=newEqu[i-1]*newEqu[i+1]
-                            newEqu.pop(i + 1)
-                            newEqu.pop(i)
-                            break
-                        elif newEqu[i]=="/":
-                            newEqu[i-1]=newEqu[i-1]/newEqu[i+1]
-                            newEqu.pop(i+1)
-                            newEqu.pop(i)
-                            break
-                        elif newEqu[i] == ")":
-                            for i in range(j, len(newEqu)):
-                                if newEqu[i] == "+":
-                                    newEqu[i - 1] = newEqu[i - 1] + newEqu[i + 1]
-                                    newEqu.pop(i + 1)
-                                    newEqu.pop(i)
-                                    break
-                                elif newEqu[i] == "-":
-                                    newEqu[i - 1] = newEqu[i - 1] - newEqu[i + 1]
-                                    newEqu.pop(i + 1)
-                                    newEqu.pop(i)
-                                    break
-                            break
-                else:
-                    for i in range(j,len(newEqu)):
-                        if newEqu[i]=="+":
-                            newEqu[i-1]=newEqu[i-1]+newEqu[i+1]
-                            newEqu.pop(i + 1)
-                            newEqu.pop(i)
-                            break
-                        elif newEqu[i]=="-":
-                            newEqu[i-1]=newEqu[i-1]-newEqu[i+1]
-                            newEqu.pop(i+1)
-                            newEqu.pop(i)
-                            break
-            newEqu.pop(j+1)
-        else:
-            while len(newEqu)!=1:
-                if newEqu.count("(")!=0:
-                    for i in range(len(newEqu)):
-                        if newEqu[i]=="(":
-                            self.sum(newEqu,i,1)
-                            break
-                if newEqu.count("*")!=0 or newEqu.count("/")!=0:
-                    for i in range(len(newEqu)):
-                        if newEqu[i]=="*":
-                            newEqu[i-1]=newEqu[i-1]*newEqu[i+1]
-                            newEqu.pop(i + 1)
-                            newEqu.pop(i)
-                            break
-                        elif newEqu[i]=="/":
-                            newEqu[i-1]=newEqu[i-1]/newEqu[i+1]
-                            newEqu.pop(i+1)
-                            newEqu.pop(i)
-                            break
-                else:
-                    for i in range(len(newEqu)):
-                        if newEqu[i]=="+":
-                            newEqu[i-1]=newEqu[i-1]+newEqu[i+1]
-                            newEqu.pop(i + 1)
-                            newEqu.pop(i)
-                            break
-                        elif newEqu[i]=="-":
-                            newEqu[i-1]=newEqu[i-1]-newEqu[i+1]
-                            newEqu.pop(i+1)
-                            newEqu.pop(i)
-                            break
-###############################################################################################
+
     def enter(self):
         equList=[str(x) for x in self.e1.get()]
         newEqu=[]
@@ -432,26 +379,37 @@ class CardGame:
                 if i + 1 != len(equList) and (equList[i+1]=="+" or equList[i+1]=="-" or equList[i+1]=="*" or equList[i+1]=="/"):
                     return self.wrong(self.e1.get())
                 newEqu.append(equList[i])
-            else:
+            elif equList[i]=="(" or equList[i]==")":
                 newEqu.append(equList[i])
+            else:
+                return self.wrong(self.e1.get())
             i+=1
         if len(numList)>4:
             return self.wrong(1)
+        pop_cnt=0
         for i in range(4):
-            for j in range(4):
+            j = 0
+            while numList:
                 if numList[j]==1:
                     if self.card[i] % 13 == 12:
                         print(numList[j])
                         numList.pop(j)
+                        pop_cnt+=1
                         break
-                if self.card[i]%13==numList[j]-2:
+                elif self.card[i]%13==numList[j]-2:
                     print(numList[j])
                     numList.pop(j)
+                    pop_cnt += 1
                     break
+                else:
+                    j+=1
+                    print(j)
+                    if j==4-pop_cnt:
+                        return self.wrong(1)
         if  len(numList)!=0:
             return self.wrong(1)
-        self.sum(newEqu,0,0)
-        if newEqu[0]!=24:
+
+        if eval(self.e1.get())!=24:
             return self.wrong(self.e1.get())
         else:
             return self.right()
@@ -486,4 +444,59 @@ class CardGame:
         Button(frame2,text="확인",command=self.enter).pack(side=LEFT)
 
         window.mainloop()
+CardGame()
+'''
+from tkinter import *
+import tkinter.messagebox
+import random
+class CardGame():
+    def reset(self):
+        random.shuffle(self.index)
+        for i in range(4):
+            self.LabelList[i].configure(image=self.imageList[self.index[i]])
+    def check(self):
+        cardNumbers=[]
+        for i in range(4):
+            cardNumbers.append(self.index[i]%13+1)
+        cardNumbers.sort()
+        expression=self.e.get()
+        if not expression:
+            tkinter.messagebox.showinfo("틀림", "보여지는 카드를 사용해야 합니다.")
+            return
+        answer=eval(expression)
+        expression=re.sub('[()/\+\-\*]',' ',expression)
+
+        userNumbers=expression.split()
+        userNumbers=[eval(x) for x in userNumbers]
+        userNumbers.sort()
+        if userNumbers==cardNumbers:
+            if answer==24:
+                tkinter.messagebox.showinfo("정확","맞음")
+            else:
+                tkinter.messagebox.showinfo("틀림",self.e.get()+"는 24가 아님")
+        else:
+            tkinter.messagebox.showinfo("틀림","보여지는 카드를 사용해야 합니다.")
+    def __init__(self):
+        window=Tk()
+        frame1=Frame(window)
+        frame1.pack()
+        Button(frame1,text="새로고침",command=self.reset).pack()
+        frame2=Frame(window)
+        frame2.pack()
+        self.index=[x for x in range(52)]
+        self.imageList=[]
+        for i in range(1,53):
+            self.imageList.append(PhotoImage(file="image/card/"+str(i)+".gif"))
+        self.LabelList=[]
+        for i in range(4):
+            self.LabelList.append(Label(frame2,image=self.imageList[i]))
+            self.LabelList[i].pack(side=LEFT)
+        frame3=Frame(window)
+        frame3.pack()
+        Label(frame3,text="수식을입력하세요:").pack(side=LEFT)
+        self.e=Entry(frame3,text='')
+        self.e.pack(side=LEFT)
+        Button(frame3,text="확인",command=self.check).pack()
+        window.mainloop()
+
 CardGame()
